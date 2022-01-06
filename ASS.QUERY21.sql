@@ -1,0 +1,13 @@
+USE [SalesPeoples]
+GO
+
+SELECT [ONUM]
+      ,[AMT]
+      ,[ODATE]
+      ,[CNUM]
+      ,[SNUM]
+  FROM [dbo].[ORDERS1]
+
+GO
+
+SELECT ODATE,AMT,CNUM,SNUM FROM ORDERS1 WHERE AMT=(SELECT MAX(AMT) FROM ORDERS1);

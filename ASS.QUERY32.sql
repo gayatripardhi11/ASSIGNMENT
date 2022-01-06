@@ -1,0 +1,1 @@
+Select cname, sname, comm from cust, salepeople where comm > 0.12 and cust.snum = salepeople.snum; 

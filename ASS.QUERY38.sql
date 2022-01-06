@@ -1,0 +1,1 @@
+Select onum, sname, cname, amt from orders a, salepeople b, cust c where a.snum = b.snum and a.cnum = c.cnum and a.snum = ( select snum from orders1 where cnum = ( select cnum from cust where cname = 'Hoffman')); 

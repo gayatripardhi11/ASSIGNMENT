@@ -1,0 +1,1 @@
+Select onum, snum, amt, amt * 0.12 from orders1 order by snum; 

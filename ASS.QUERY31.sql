@@ -1,0 +1,1 @@
+Select onum, sname, cname from orders1, cust, salepeople where orders1.cnum = cust.cnum and orders1.snum = salepeople.snum;

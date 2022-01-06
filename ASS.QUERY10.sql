@@ -1,0 +1,12 @@
+USE [SalesPeoples]
+GO
+
+SELECT [CNUM]
+      ,[CNAME]
+      ,[CITY]
+      ,[RATING]
+      ,[SNUM]
+  FROM [dbo].[CUST]
+
+GO
+SELECT CNAME FROM CUST WHERE RATING<= 100 OR CITY='ROME';
